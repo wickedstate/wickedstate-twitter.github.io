@@ -19,8 +19,8 @@ password_element = driver.find_element_by_xpath(password_xpath)
 login_button_element = driver.find_element_by_xpath(login_button_xpath)
 
 # login form
-email_element.send_keys ('redsystm')
-password_element.send_keys ('janganletih')
+email_element.send_keys ('username')
+password_element.send_keys ('password')
 login_button_element.click()
 time.sleep(5)
 
@@ -31,7 +31,7 @@ text_box_element.send_keys ('TWEET HERE')
 
 # image
 image_xpath = driver.find_element_by_xpath("//input[@accept = 'image/jpeg,image/png,image/webp,image/gif,video/mp4,video/quicktime,video/webm']")
-image_xpath.send_keys(os.getcwd() + "//Raid.png")
+image_xpath.send_keys(os.getcwd() + "//image.png")
     
 # tweet button
 tweet_button_xpath = '//*[@id="react-root"]/div/div/div[2]/main/div/div/div/div/div/div[2]/div/div[2]/div[1]/div/div/div/div[2]/div[4]/div/div/div[2]/div[3]/div'
